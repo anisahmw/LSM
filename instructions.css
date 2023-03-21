@@ -50,6 +50,13 @@
   margin-bottom: 0px;
   flex-direction: column;
 }
+.instructions-image {
+  width: 159px;
+  height: 244px;
+  align-self: center;
+  margin-top: var(--dl-space-space-unit);
+  object-fit: cover;
+}
 .instructions-text {
   top: 121px;
   color: var(--dl-color-scheme-f5e8e41);
@@ -59,61 +66,77 @@
   position: absolute;
   text-align: left;
 }
-.instructions-image {
+.instructions-content1 {
+  flex: 0 0 auto;
+  width: 45%;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+  align-items: flex-start;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  flex-direction: column;
+}
+.instructions-image1 {
   width: 159px;
   height: 244px;
   align-self: center;
   margin-top: var(--dl-space-space-unit);
   object-fit: cover;
 }
-.instructions-container4 {
-  flex: 1;
-  width: 516px;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.instructions-text1 {
-  top: 145px;
+.instructions-text01 {
+  top: 121px;
   color: var(--dl-color-scheme-f5e8e41);
-  right: -107px;
+  right: -226px;
+  width: var(--dl-size-size-xxlarge);
   margin: auto;
   position: absolute;
-  align-self: flex-end;
+  text-align: left;
 }
-.instructions-image1 {
-  width: 193px;
-  height: 298px;
+.instructions-text02 {
+  top: 121px;
+  right: -226px;
+  width: var(--dl-size-size-xxlarge);
+  margin: auto;
+  position: absolute;
+  text-align: left;
+}
+.instructions-content2 {
+  flex: 0 0 auto;
+  width: 45%;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+  align-items: flex-start;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  flex-direction: column;
+}
+.instructions-image2 {
+  width: 159px;
+  height: 244px;
   align-self: center;
   margin-top: var(--dl-space-space-unit);
   object-fit: cover;
-  margin-bottom: var(--dl-space-space-unit);
 }
-.instructions-container5 {
-  flex: 0 0 auto;
-  width: 485px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-.instructions-text2 {
-  top: 71px;
-  right: -185px;
+.instructions-text04 {
+  top: 121px;
+  color: var(--dl-color-scheme-f5e8e41);
+  right: -226px;
+  width: var(--dl-size-size-xxlarge);
   margin: auto;
   position: absolute;
-  align-self: flex-end;
+  text-align: left;
 }
-.instructions-pasted-image {
-  opacity: 1;
-  margin-top: var(--dl-space-space-unit);
-  border-color: var(--dl-color-scheme-f5e8e41);
-  margin-bottom: var(--dl-space-space-unit);
+.instructions-text05 {
+  top: 121px;
+  right: -226px;
+  width: var(--dl-size-size-xxlarge);
+  margin: auto;
+  position: absolute;
+  text-align: left;
 }
-.instructions-container6 {
+.instructions-container4 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -163,6 +186,14 @@
     width: 50%;
     margin-right: var(--dl-space-space-unit);
   }
+  .instructions-content1 {
+    width: 50%;
+    margin-right: var(--dl-space-space-unit);
+  }
+  .instructions-content2 {
+    width: 50%;
+    margin-right: var(--dl-space-space-unit);
+  }
   .instructions-navlink {
     color: var(--dl-color-scheme-f5e8e41);
     width: auto;
@@ -194,6 +225,14 @@
     width: 100%;
     margin-right: 0px;
   }
+  .instructions-content1 {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .instructions-content2 {
+    width: 100%;
+    margin-right: 0px;
+  }
   .instructions-navlink {
     color: var(--dl-color-scheme-f5e8e41);
     width: auto;
@@ -215,55 +254,79 @@
   .instructions-container2 {
     margin-top: 10%;
   }
-  .instructions-text {
-    top: 96px;
-    color: #6d2243;
-    right: -20px;
-    margin-top: var(--dl-space-space-halfunit);
-    text-align: justify;
-    margin-left: var(--dl-space-space-halfunit);
-    margin-right: var(--dl-space-space-halfunit);
-    text-transform: uppercase;
+  .instructions-content {
+    align-self: center;
   }
   .instructions-image {
     width: 118px;
     height: 199px;
-    align-self: flex-start;
+    align-self: center;
     margin-top: var(--dl-space-space-unit);
     margin-left: var(--dl-space-space-unit);
     margin-bottom: var(--dl-space-space-unit);
   }
-  .instructions-container4 {
-    width: 158px;
-    height: 325px;
-  }
-  .instructions-text1 {
-    top: 165px;
+  .instructions-text {
+    top: 96px;
     color: #6d2243;
-    right: -215px;
+    right: -20px;
+    position: static;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .instructions-content1 {
+    align-self: center;
   }
   .instructions-image1 {
-    width: 119px;
-    height: 197px;
-    margin-top: var(--dl-space-space-halfunit);
+    width: 118px;
+    height: 199px;
+    align-self: center;
+    margin-top: var(--dl-space-space-unit);
     margin-left: var(--dl-space-space-unit);
-    margin-bottom: var(--dl-space-space-halfunit);
+    margin-bottom: var(--dl-space-space-unit);
   }
-  .instructions-container5 {
-    width: 160px;
+  .instructions-text01 {
+    top: 96px;
+    color: rgb(109, 34, 67);
+    right: -20px;
+    position: static;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
   }
-  .instructions-text2 {
-    top: 72px;
-    color: #6d2243;
-    right: -240px;
+  .instructions-text02 {
+    top: 96px;
+    right: -20px;
+    position: static;
+    align-self: center;
+    text-align: center;
   }
-  .instructions-pasted-image {
-    width: 148px;
-    height: 146px;
-    opacity: 1;
-    margin-top: 0px;
+  .instructions-content2 {
+    align-self: center;
+  }
+  .instructions-image2 {
+    width: 242px;
+    height: 199px;
+    align-self: center;
+    margin-top: var(--dl-space-space-unit);
     margin-left: var(--dl-space-space-unit);
-    margin-bottom: 0px;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .instructions-text04 {
+    top: 96px;
+    color: rgb(109, 34, 67);
+    right: -20px;
+    position: static;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .instructions-text05 {
+    top: 96px;
+    right: -20px;
+    position: static;
+    align-self: center;
+    text-align: center;
   }
   .instructions-navlink {
     color: var(--dl-color-scheme-f5e8e41);
@@ -274,11 +337,14 @@
     border-color: var(--dl-color-scheme-f5e8e41);
     border-width: 6px;
   }
+  .instructions-text07 {
+    font-size: 20px;
+  }
   .instructions-navlink1 {
     color: var(--dl-color-scheme-f5e8e41);
     width: auto;
     height: auto;
-    font-size: 150%;
+    font-size: 20px;
     align-self: center;
     border-color: var(--dl-color-scheme-f5e8e41);
     border-width: 6px;
