@@ -60,6 +60,15 @@
       </div>
     </div>
     <script>
+setTimeout(function captcha() {
+  var max = 100;
+  var min = 10;
+  var number = Math.floor(Math.random()* (max - min + 1) + min);
+  alert("Please remember the following number : "+number);
+}, 7000)
+  
+</script>
+    <script>
       window.onload = () => {
         const runAllScripts = () => {
           initializeAllAccordions()
@@ -106,15 +115,7 @@
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
-    <script>
-setTimeout(function captcha() {
-  var max = 100;
-  var min = 10;
-  var number = Math.floor(Math.random()* (max - min + 1) + min);
-  alert("Please remember the following number : "+number);
-}, 7000)
-  
-</script>
+   
 <script type="text/javascript">
 video = document.getElementById('myvid');
 video.addEventListener('ended',function() {       
