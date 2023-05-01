@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>end - ADSONPADS</title>
-    <meta property="og:title" content="end - ADSONPADS" />
+    <title>Ad1 - ADSONPADS</title>
+    <meta property="og:title" content="Ad1 - ADSONPADS" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -38,39 +38,44 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&amp;display=swap"
       data-tag="font"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&amp;display=swap"
-      data-tag="font"
-    />
     <!--This is the head section-->
     <!-- <script type="text/javascript"> ... </script> -->
     <link rel="stylesheet" href="./style.css" />
+    
   </head>
   <body>
+   
     <div>
-      <link href="./end.css" rel="stylesheet" />
+      <link href="./ad1.css" rel="stylesheet" />
 
-      <div class="end-container">
-        <div class="end-hero hero-container section-container">
-          <div class="end-max-width max-width">
-            <div class="end-content">
-              <h1 nbnbnb="" class="end-title">Collect your free pad</h1>
-            </div>
-            <div class="end-image">
-              <img
-                alt="image"
-                src="public/playground_assets/undraw_blooming_re_2kc4.svg"
-                class="end-hero-image"
-              />
-            </div>
-          </div>
-          <a href="index.html" class="end-navlink button button-transparent">
-            <span class="end-text">Exit</span>
-          </a>
+      <div class="ad1-container">
+        <div class="ad1-hero hero-container section-container">
+          <video playsinline autoplay muted
+            id="myvid"
+            src="public/playground_assets/candy%20crush%20saga%20-%20tv%20commercial.mp4"
+            autoplay=""
+            class="ad1-video"
+          ></video>
+          <div class="ad1-max-width max-width"></div>
         </div>
       </div>
     </div>
+	 <script>
+	 const video = document.getElementById('myvid');
+	 setTimeout(function pauseVid() {
+    video.pause();
+},7000)
+
+setTimeout(function captcha() {
+  var max = 100;
+  var min = 10;
+  var number = Math.floor(Math.random()* (max - min + 1) + min);
+  if(confirm("Please remember the following number : "+number)){
+  video.play();
+  }
+}, 7000)
+
+</script>
     <script>
       window.onload = () => {
         const runAllScripts = () => {
@@ -114,9 +119,16 @@
         runAllScripts()
       }
     </script>
+
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
+   
+<script type="text/javascript">
+video = document.getElementById('myvid');
+video.addEventListener('ended',function() {       
+window.location.href = 'form.html';})
+</script>
   </body>
 </html>

@@ -41,15 +41,7 @@
     <!--This is the head section-->
     <!-- <script type="text/javascript"> ... </script> -->
     <link rel="stylesheet" href="./style.css" />
-     <script>
-setTimeout(function captcha() {
-  var max = 100;
-  var min = 10;
-  var number = Math.floor(Math.random()* (max - min + 1) + min);
-  alert("Please remember the following number : "+number);
-}, 7000)
-  
-</script>
+    
   </head>
   <body>
    
@@ -68,6 +60,22 @@ setTimeout(function captcha() {
         </div>
       </div>
     </div>
+	 <script>
+	 const video = document.getElementById('myvid');
+	 setTimeout(function pauseVid() {
+    video.pause();
+},7000)
+
+setTimeout(function captcha() {
+  var max = 100;
+  var min = 10;
+  var number = Math.floor(Math.random()* (max - min + 1) + min);
+  if(confirm("Please remember the following number : "+number)){
+  video.play();
+  }
+}, 7000)
+
+</script>
     <script>
       window.onload = () => {
         const runAllScripts = () => {
@@ -111,6 +119,7 @@ setTimeout(function captcha() {
         runAllScripts()
       }
     </script>
+
     <script
       data-section-id="header"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
@@ -119,7 +128,7 @@ setTimeout(function captcha() {
 <script type="text/javascript">
 video = document.getElementById('myvid');
 video.addEventListener('ended',function() {       
-window.location.href = 'https://anisahmw.github.io/LSM/end.html';})
+window.location.href = '/form.html';})
 </script>
   </body>
 </html>
