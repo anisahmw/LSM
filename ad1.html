@@ -62,7 +62,7 @@
     </div>
 	 <script>
 	 const video = document.getElementById('myvid');
-	 var number = Math.floor(Math.random()* (max - min + 1) + min);
+	 
 setTimeout(function pauseVid() {
     video.pause();
 },7000)
@@ -70,7 +70,7 @@ setTimeout(function pauseVid() {
 setTimeout(function captcha() {
   var max = 100;
   var min = 10;
-  
+  var number = Math.floor(Math.random()* (max - min + 1) + min);
   if(confirm("Please remember the following number : "+number)){
   video.play();
   }
