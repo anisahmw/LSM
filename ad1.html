@@ -78,14 +78,21 @@ setTimeout(function captcha() {
 
 video.addEventListener('ended',function() {       
 let form = prompt("Please enter the displayed number:");
-  if (form == null || form == "") {
+  
+if (form) {
+        window.location.href = 'https://anisahmw.github.io/LSM/end.html';
+      } else {
+        window.location.href = 'https://anisahmw.github.io/LSM/index.html';
+      }
+)
+/*if (form == null || form == "") {
     alert("User cancelled the prompt.");
 	window.location.href = 'https://anisahmw.github.io/LSM/index.html';
   } else {
  
 window.location.href = 'https://anisahmw.github.io/LSM/end.html';}
 })
-
+*/
 </script>
     <script>
       window.onload = () => {
